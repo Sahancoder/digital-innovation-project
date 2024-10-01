@@ -10,3 +10,167 @@ h1 {
     text-align: center;
     padding: 20px;
 }
+
+:root {
+    --pink: #e84393;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+  }
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+  }
+  section {
+    padding: 2rem 9%;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: 0.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+  .btn:hover {
+    background: #723131;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #0b0a0a;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  header .logo {
+    font-size: 3rem;
+    color: #f2ecec;
+    font-weight: bolder;
+  }
+  header .logo span {
+    color: #be5656;
+    font-size: 2.5rem;
+  }
+  header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #efe5e5;
+  }
+  .navbar a.active,
+  .navbar a:hover {
+    background: linear-gradient(45deg, rgb(214, 207, 210), rgb(72, 63, 68));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  header .navbar a:hover {
+    color: #999;
+  }
+  .home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./images/c1.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .home .content {
+    max-width: 50rem;
+  }
+  .home .content h3{
+    font-size: 5rem;
+    color: #f9efef;
+  }
+  .home .content span {
+    font-size: 3.5rem;
+    color: var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5s;
+  }
+  .home .content p {
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5s;
+  }
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    header {
+      padding: 2rem;
+    }
+    section {
+      padding: 2rem;
+    }
+    .home {
+      background-position: left;
+    }
+  }
+  @media (max-width: 868px) {
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #eee;
+      border-top: 0.2rem solid rgba(0, 0, 0, 0.1);
+    }
+    header .navbar a {
+      font-size: 20px;
+      padding-left: 60px;
+    }
+  }
+  @media (max-width: 852px) {
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #eee;
+      border-top: 0.2rem solid rgba(0, 0, 0, 0.1);
+    }
+    header .navbar a {
+      font-size: 20px;
+      padding-left: 60px;
+    }
+  }
+  @media (max-width: 768px) {
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #eee;
+      border-top: 0.2rem solid rgba(0, 0, 0, 0.1);
+    }
+    header .navbar a {
+      font-size: 15px;
+      padding-left: 23px;
+    }
+    .home .content h3{
+      font-size: 5rem;
+    }
+    .home .content span {
+      font-size: 2.5rem;
+    }
+  }
+  
