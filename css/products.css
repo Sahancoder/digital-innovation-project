@@ -1,0 +1,203 @@
+.our-gallery{
+    padding: 20rem 10%;
+    background-color: var(--blackcolor);
+  }
+  
+  .our-gallery h1{
+    font-size: 40px;
+    font-family: var(--font-jost);
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+  }
+  .our-gallery h1 span{
+    color: var(--othercolor);
+  }
+  .main-gallery{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .gallery-inner-content{
+    flex: 1 1 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  .gallery-inner-content img{
+    width: 100%;
+    border: 3px solid var(--graycolor);
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    
+  }
+  .gallery-inner-content .gallery-icons{
+    position: absolute;
+    top: 10%;
+    left: -100%;
+    transition: all 0.5s;
+  }
+  .gallery-inner-content:hover .gallery-icons{
+    left: 10%;
+    cursor: pointer;
+  }
+  .gallery-inner-content .gallery-icons i{
+    color: var(--othercolor);
+    font-size: 18px;
+    margin: 0 0.5rem;
+    padding: 1rem;
+    border: 2px solid var(--mycolor);
+  }
+  .gallery-inner-content .gallery-icons i:hover{
+    color: var(--textcolor);
+  }
+
+  .main-coffee{
+    padding: 2rem 9%;
+    background: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+  
+  .main-coffee h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 2rem 0;
+    color: white;
+  }
+  .main-coffee h1 span{
+    color: var(--othercolor);
+  }
+  .inner-coffee{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .inner-coffee-content{
+    flex: 1 1 45rem;
+  }
+  .inner-coffee-content h2{
+  
+    font-size: 35px;
+    color: var(--othercolor);
+  
+  }
+  .inner-coffee-content p{
+    color: white;
+    font-size: 1.5rem;
+    margin: 3rem 0;
+    font-family: var(--font-jost);
+  }
+  
+  .inner-coffee-content .inner-coffee-img{
+    text-align: center;
+  }
+  .inner-coffee-content .inner-coffee-img img{
+    width: 60%;
+  }
+  .button-coffe{
+    color: white;
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    border: 2px solid var(--graycolor);
+    margin-top: 2rem;
+    background: var(--graycolor);
+    position: relative;
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+  }
+  .button-coffe:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: var(--othercolor);
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+    top: 0;
+   }
+   
+   .button-coffe:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+   }
+   .button-coffe span{
+    z-index: 20;
+    color: white;
+   }
+
+   /* products stared */
+   .products .box-container{
+    display:grid;
+   grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+    gap:1.5rem;
+}
+.products .box-container .box{
+   text-align:center;
+    padding:2rem;
+    border:var(--border);
+    /* padding-left:10px;
+    padding-right:10px;
+    width:100%; */
+
+   
+}
+.products .box-container .box .image{
+    padding:2.5rem 0;
+
+}
+
+.products .box-container .box .image img{
+    height:25rem;
+    width:25rem;
+
+}
+.products .box-container .box .content h3{
+    color:#fff;
+    font-size:2.5rem;
+}
+
+
+.products .box-container .box .content .stars img{
+    height:11px;
+    width:11px;
+}
+.products .box-container .box .content .price{
+    color:#fff;
+    font-size:2.5rem;
+}
+.products .box-container .box .content .price span{
+    
+    font-size:1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+.btn{
+    display:inline-block;
+    margin-top:1rem;
+    border-radius:5rem;
+    background:#333;
+    color:#fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size:1.7rem;
+}
+.btn:hover{
+    background:#723131;
+}
+
+
+
+
+

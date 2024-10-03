@@ -1,0 +1,39 @@
+.reviews-section {
+    padding: 300px 0;
+    text-align: center;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review-tile {
+    background: #807f7c;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(168, 167, 167, 0.829);
+    overflow: hidden;
+    width: 400px;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.review-tile img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.review-tile h3 {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.review-tile p {
+    font-size: 0.9em;
+    color: #555;
+}

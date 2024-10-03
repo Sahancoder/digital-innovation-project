@@ -1,0 +1,65 @@
+
+.contactus{
+    padding: 20rem 9%;
+    background: var(--graycolor);
+    
+  }
+  .contactus h2{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin: 2rem 0;
+  font-family: var(--font-jost);
+  }
+  .contactus h2 span{
+    color: var(--othercolor);
+  }
+  .main-contact{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .inner-contact{
+    flex: 1 1 45rem;
+  }
+  .inner-contact img{
+    width: 100%;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #32323D;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: var(--blackcolor);
+    color: white;
+  
+  }
+  
+  input[type=submit] {
+    background-color: var(--othercolor);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: var(--othercolor);
+  }
+  
+  .container label{
+    color: var(--othercolor);
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  
