@@ -87,7 +87,7 @@ h1 {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(./images/c1.webp) no-repeat;
+    background: url(./images/c3.jpg) no-repeat;
     background-size: cover;
     background-position: center;
   }
@@ -106,7 +106,7 @@ h1 {
   }
   .home .content p {
     font-size: 1.5rem;
-    color: #999;
+    color: #c2baba;
     padding: 1rem 0;
     line-height: 1.5s;
   }
